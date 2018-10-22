@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wanderer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-6w-IIf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wanderer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhw-s3-pUg">
+                                <rect key="frame" x="67" y="60" width="241" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="UXg-D7-GMy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itineraries for City Explorers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHo-f4-cc9">
+                                <rect key="frame" x="77" y="132" width="221" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="RzA-N7-b44"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI0-eg-toh">
+                                <rect key="frame" x="36" y="663" width="303" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="YCv-Xz-7w0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="40"/>
+                                <state key="normal" title="Start Exploring">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BEM-y9-prk" kind="presentation" identifier="secondStoryboard" modalTransitionStyle="partialCurl" id="Q3z-Kh-id7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dHo-f4-cc9" firstAttribute="top" secondItem="mhw-s3-pUg" secondAttribute="bottom" constant="8" id="6kx-th-Zid"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mhw-s3-pUg" secondAttribute="trailing" constant="67" id="8ud-Fn-ZW5"/>
+                            <constraint firstItem="U6H-6w-IIf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JXY-2k-phe"/>
+                            <constraint firstItem="dHo-f4-cc9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Nvg-zd-6qE"/>
+                            <constraint firstItem="mhw-s3-pUg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="SvO-dV-wfS"/>
+                            <constraint firstItem="U6H-6w-IIf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U7t-Ml-pDL"/>
+                            <constraint firstItem="aI0-eg-toh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="XKQ-aW-KKS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aI0-eg-toh" secondAttribute="trailing" constant="36" id="cfO-tA-IuN"/>
+                            <constraint firstItem="dHo-f4-cc9" firstAttribute="top" secondItem="mhw-s3-pUg" secondAttribute="bottom" constant="8" id="mRs-ig-gam"/>
+                            <constraint firstItem="U6H-6w-IIf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mvG-zn-5OS"/>
+                            <constraint firstAttribute="bottom" secondItem="U6H-6w-IIf" secondAttribute="bottom" id="ozu-FG-gwl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aI0-eg-toh" secondAttribute="bottom" constant="45" id="rK9-JI-0vQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dHo-f4-cc9" secondAttribute="trailing" constant="77" id="tBw-Hr-9gz"/>
+                            <constraint firstItem="mhw-s3-pUg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="xaS-oA-dZM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="startExploringButton" destination="aI0-eg-toh" id="r1c-49-kBM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.74384236453201"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="3Mk-am-Dab">
+            <objects>
+                <viewController storyboardIdentifier="secondStoryboard" id="BEM-y9-prk" customClass="SecondViewController" customModule="Wanderer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ABU-iE-pcc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-zN-yWH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="zwE-wf-yec">
+                                <rect key="frame" x="16" y="60" width="343" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tai-2W-ctm">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="690.66666666666663"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xmo-DT-cho">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="230.33333333333334"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm exploring..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-Wg-SFy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncQ-kd-A08">
+                                                        <rect key="frame" x="0.0" y="34.333333333333314" width="343" height="196"/>
+                                                    </pickerView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-Ro-cYd">
+                                                <rect key="frame" x="0.0" y="230.33333333333331" width="343" height="230"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJY-6l-9v4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.333333333333336"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SfU-ze-qcl">
+                                                        <rect key="frame" x="0.0" y="34.333333333333357" width="343" height="195.66666666666663"/>
+                                                        <date key="date" timeIntervalSinceReferenceDate="561843629.46339798">
+                                                            <!--2018-10-21 19:40:29 +0000-->
+                                                        </date>
+                                                        <connections>
+                                                            <action selector="fromDatePicked:" destination="BEM-y9-prk" eventType="valueChanged" id="NA4-2D-5XL"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fzZ-Qc-xbx">
+                                                <rect key="frame" x="0.0" y="460.33333333333331" width="343" height="230.33333333333331"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9v-aE-b1r">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pHG-bv-clM">
+                                                        <rect key="frame" x="0.0" y="34.666666666666615" width="343" height="195.66666666666663"/>
+                                                        <date key="date" timeIntervalSinceReferenceDate="561843656.75666499">
+                                                            <!--2018-10-21 19:40:56 +0000-->
+                                                        </date>
+                                                        <connections>
+                                                            <action selector="toDatePicked:" destination="BEM-y9-prk" eventType="valueChanged" id="whU-XW-xDy"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cu-MU-MhU">
+                                        <rect key="frame" x="0.0" y="690.66666666666663" width="343" height="45.333333333333371"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="30"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextThirdViewButton:" destination="BEM-y9-prk" eventType="touchUpInside" id="5pE-Zn-h6W"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1kd-zN-yWH" firstAttribute="trailing" secondItem="pym-WL-aZR" secondAttribute="trailing" id="4R6-kv-Yiv"/>
+                            <constraint firstAttribute="bottom" secondItem="1kd-zN-yWH" secondAttribute="bottom" id="Hev-eg-S04"/>
+                            <constraint firstAttribute="bottom" secondItem="zwE-wf-yec" secondAttribute="bottom" constant="16" id="Z6x-df-6rZ"/>
+                            <constraint firstItem="1kd-zN-yWH" firstAttribute="leading" secondItem="pym-WL-aZR" secondAttribute="leading" id="gSA-XM-Vqc"/>
+                            <constraint firstItem="1kd-zN-yWH" firstAttribute="top" secondItem="ABU-iE-pcc" secondAttribute="top" id="hy3-s4-aXi"/>
+                            <constraint firstItem="pym-WL-aZR" firstAttribute="trailing" secondItem="zwE-wf-yec" secondAttribute="trailing" constant="16" id="s18-LG-Usg"/>
+                            <constraint firstItem="zwE-wf-yec" firstAttribute="leading" secondItem="ABU-iE-pcc" secondAttribute="leading" constant="16" id="txw-OR-JLk"/>
+                            <constraint firstItem="zwE-wf-yec" firstAttribute="top" secondItem="pym-WL-aZR" secondAttribute="top" constant="16" id="zLl-kC-lms"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pym-WL-aZR"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityPicker" destination="ncQ-kd-A08" id="Ebl-IH-CSc"/>
+                        <outlet property="fromDatePicker" destination="SfU-ze-qcl" id="rdQ-gl-3tM"/>
+                        <outlet property="nextThirdViewButton" destination="7Cu-MU-MhU" id="wqV-Z1-DRL"/>
+                        <outlet property="toDatePicker" destination="pHG-bv-clM" id="BDt-0O-1eg"/>
+                        <segue destination="viS-kv-QJQ" kind="presentation" identifier="thirdViewSeque" modalTransitionStyle="partialCurl" id="LyH-EG-jhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s94-Ey-2Hb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.79999999999995" y="132.26600985221674"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="IW5-R4-haM">
+            <objects>
+                <viewController storyboardIdentifier="thirdStoryboard" id="viS-kv-QJQ" customClass="ThirdViewController" customModule="Wanderer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3si-aa-0yk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S9w-QR-yoY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJS-1E-liI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blank" width="349" height="318"/>
+        <image name="wallpaper" width="3584" height="5376"/>
+    </resources>
+</document>
